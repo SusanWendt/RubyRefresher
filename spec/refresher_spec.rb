@@ -53,8 +53,8 @@ describe 'Refresher' do
 
   context "the following are Hash methods" do
     it "adds a key and value to a Hash" do
-      a_hash = { "a" => 1}
-
+      a_hash = {}
+      a_hash.store(:k,"value")
       expect(a_hash.empty?).to be false
     end
 
